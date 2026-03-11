@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+  /* Remplacement du Flash platine.swf - platine vinyle */
+  .flash-platine {
+    width: 483px;
+    height: 264px;
+    background: #111;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .vinyl {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #333 15%, #111 16%, #222 30%, #111 31%, #222 45%, #111 46%, #222 60%, #111 61%, #1a1a1a 100%);
+    border: 3px solid #444;
+    animation: spin 3s linear infinite;
+    position: relative;
+  }
+  .vinyl::after {
+    content: 'USTOF';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #666 20%, #FF0000 21%, #CC0000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Impact', sans-serif;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .tonearm {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 4px;
+    height: 120px;
+    background: linear-gradient(to bottom, #888, #666);
+    transform-origin: top center;
+    transform: rotate(25deg);
+    border-radius: 2px;
+  }
+  .tonearm::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -3px;
+    width: 10px;
+    height: 10px;
+    background: #999;
+    border-radius: 2px;
+  }
+</style>
+</head>
+
+<body bgcolor="#000000" background="img/textur.jpeg" text="#FFFFFF">
+<div align="center">
+  <p><strong><em>BIENVENU SUR LE SITE OFFICIEL DE U.S.T.O.F</em></strong> </p>
+  <p>
+    <!-- Remplacement du Flash platine.swf par une platine CSS -->
+    <div class="flash-platine">
+      <div class="vinyl"></div>
+      <div class="tonearm"></div>
+    </div>
+  </p>
+  <p><kbd>Ce site a pour but de faire connaitre la musique de U.S touch of Franconville
+    a travers la toile de l'internet afin de diffuser la musique de U.S.T.O.F
+    &agrave; travers le monde,</kbd></p>
+  <p><kbd>si vous &ecirc;tes int&eacute;rress&eacute;s par notre zik et que vous
+    voulez nous contacter pour de animations ou pour nous produire ce site est
+    l&agrave; pour vous....</kbd></p>
+  <p><kbd>Merci de l'int&eacute;r&ecirc;t que vous portez a notre art...</kbd></p>
+  <p align="right"><kbd>Lionel R</kbd>.</p>
+  <p align="right">&nbsp;</p>
+  <p align="right">&nbsp;</p>
+  <p align="right">&nbsp;</p>
+  <p align="right">&nbsp;</p>
+  <p align="right">&nbsp;</p>
+
+  <p>&nbsp; </p>
+</div>
+</body>
+</html>
